@@ -11,7 +11,7 @@ const TextInputRoot: React.FC<TextInputRoot> = ({ children }) => {
   return (
     <div
       className={clsx(
-        'w-full flex items-center gap-3 py-4 px-3 rounded bg-gray-800 focus-within:ring-2 ring-cyan-300',
+        'w-full h-12 flex items-center gap-3 py-4 px-3 rounded bg-gray-800 focus-within:ring-2 ring-cyan-300',
       )}
     >
       {children}
