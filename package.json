@@ -18,6 +18,7 @@
     "@storybook/addon-a11y": "^6.5.12",
     "@typescript-eslint/eslint-plugin": "^5.40.0",
     "@typescript-eslint/parser": "^5.40.0",
+    "axios": "^1.1.2",
     "clsx": "^1.2.1",
     "eslint": "^8.25.0",
     "eslint-config-prettier": "^8.5.0",
@@ -52,9 +53,14 @@
     "autoprefixer": "^10.4.12",
     "babel-loader": "^8.2.5",
     "eslint-plugin-storybook": "^0.6.6",
+    "msw": "^0.47.4",
+    "msw-storybook-addon": "^1.6.3",
     "postcss": "^8.4.17",
     "tailwindcss": "^3.1.8",
     "typescript": "^4.6.4",
     "vite": "^3.1.0"
+  },
+  "msw": {
+    "workerDirectory": "public"
   }
 }

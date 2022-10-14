@@ -1,4 +1,5 @@
 import { FormEvent, useState } from 'react';
+import axios from 'axios';
 
 import { Envelope, Lock } from 'phosphor-react';
 
@@ -12,8 +13,13 @@ import { Button } from '../../components/button/Button';
 export const SignIn: React.FC = () => {
   const [isUserSignedIn, setIsUserSignedIn] = useState<boolean>(false);
 
-  const handleSignIn = (event: FormEvent) => {
+  const handleSignIn = async (event: FormEvent) => {
     event.preventDefault();
+
+    await axios.post('/sessions', {
+      email: 'test@mail.com',
+      password: '12345678',
+    });
 
     setIsUserSignedIn(true);
   };
